@@ -1,0 +1,26 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+span {
+    color: #FFD000;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.card {
+    width: auto;
+    height: 65px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#card-header {
+    width: 500px;
+    height: 65px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
