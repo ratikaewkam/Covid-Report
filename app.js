@@ -10,6 +10,7 @@ const totalRecovered = document.getElementById("total_recovered");
 
 const getData = () => {
     axios.get("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all").then(res => {
+        console.log("Connected")
         console.log(res.data);
         date.innerHTML = res.data[0].update_date;
         newCase.innerHTML = res.data[0].new_case + " ราย";
@@ -19,6 +20,7 @@ const getData = () => {
         newRecovered.innerHTML = res.data[0].new_recovered + " ราย";
         totalRecovered.innerHTML = res.data[0].total_recovered + " ราย";
     }).catch(error => {
+        console.error('Disconnected')
         console.error(error);
     });
 }
